@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "pc": "postcss ./assets/scss/index.scss -o ./assets/dist/css/main.min.css --verbose -w",
-    "tw": "npx tailwindcss -i ./assets/dist/css/output.css -o ./assets/dist/css/output.css --watch --minify",
+    "tw": "npx tailwindcss -i ./assets/dist/css/main.min.css -o ./assets/dist/css/main.min.css --watch --minify",
     "wp": "npx webpack -w"
   },
   "author": "",

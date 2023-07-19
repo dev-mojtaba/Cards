@@ -1,0 +1,238 @@
+.plans {
+    width: 100%;
+    height: 100vh;
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: darkgray;
+    user-select: none;
+    font-family: 'Roboto-Medium';
+
+    &__card {
+        width: 280px;
+        height: 420px;
+        margin: 30px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        border-radius: 45px;
+        background-color: white;
+
+        &--name {
+            width: 200px;
+            padding: 15px 0px;
+            position: absolute;
+            top: -30px;
+            color: white;
+            border-radius: 50px;
+            text-align: center;
+            font-size: larger;
+            font-weight: 500;
+            letter-spacing: 2.8px;
+        }
+
+        &--title {
+            margin-top: 40px;
+            font-size: 14px;
+            font-weight: 500;
+
+            span {
+                font-size: 30px;
+                font-weight: 700;
+            }
+        }
+
+        &--perms {
+            width: 90%;
+
+            .perms__field {
+                padding: 10px 0;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                border-top: 2px solid #E6E6E6;
+                border-bottom: 2px solid #E6E6E6;
+
+                &-top {
+                    margin-top: 15px;
+                    padding: 10px 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    border-top: 4px solid #E6E6E6;
+                    border-bottom: 2px solid #E6E6E6;
+                
+                    .check-icon {
+                        width: 4px;
+                        height: 15px;
+                        display: flex;
+                        background-color: lime;
+                        transform: rotate(45deg);
+                        border-radius: 10px;
+                    }
+        
+                    .check-icon::after {
+                        content: '';
+                        width: 4px;
+                        height: 8px;
+                        background-color: lime;
+                        transform: rotate(-90deg) translateX(-9px) translateY(-3px);
+                        border-radius: 10px;
+                    }
+                }
+                
+                &-bottom {
+                    padding: 10px 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    border-top: 2px solid #E6E6E6;
+                    border-bottom: 4px solid #E6E6E6;
+                
+                    .check-icon {
+                        width: 4px;
+                        height: 15px;
+                        display: flex;
+                        background-color: lime;
+                        transform: rotate(45deg);
+                        border-radius: 10px;
+                    }
+        
+                    .check-icon::after {
+                        content: '';
+                        width: 4px;
+                        height: 8px;
+                        background-color: lime;
+                        transform: rotate(-90deg) translateX(-9px) translateY(-3px);
+                        border-radius: 10px;
+                    }
+                
+                    .close-icon {
+                        width: 4px;
+                        height: 15px;
+                        display: flex;
+                        background-color: red;
+                        transform: rotate(45deg);
+                        border-radius: 10px;
+                    }
+        
+                    .close-icon::after {
+                        content: '';
+                        width: 4px;
+                        height: 15px;
+                        background-color: red;
+                        transform: rotate(-90deg);
+                        border-radius: 10px;
+                    }
+                }
+                
+                .check-icon {
+                    width: 4px;
+                    height: 15px;
+                    display: flex;
+                    background-color: lime;
+                    transform: rotate(45deg);
+                    border-radius: 10px;
+                }
+    
+                .check-icon::after {
+                    content: '';
+                    width: 4px;
+                    height: 8px;
+                    background-color: lime;
+                    transform: rotate(-90deg) translateX(-9px) translateY(-3px);
+                    border-radius: 10px;
+                }
+                
+                .close-icon {
+                    width: 4px;
+                    height: 15px;
+                    display: flex;
+                    background-color: red;
+                    transform: rotate(45deg);
+                    border-radius: 10px;
+                }
+    
+                .close-icon::after {
+                    content: '';
+                    width: 4px;
+                    height: 15px;
+                    background-color: red;
+                    transform: rotate(-90deg);
+                    border-radius: 10px;
+                }
+            }
+        }
+
+        &--buttons-card {
+            margin-top: 35px;
+            padding: 15px 45px;
+            color: white;
+            border-radius: 50px;
+            text-align: center;
+            font-size: larger;
+            font-weight: 500;
+            letter-spacing: 2.8px;
+        }
+    }
+
+    .indigo {
+        h3 {
+            background-color: #3F48CC;
+        }
+
+        h4 {
+            color: #3F48CC;
+        }
+
+        button {
+            background-color: #3F48CC;
+        }
+    }
+
+    .purple {
+        h3 {
+            background-color: #B34E86;
+        }
+
+        h4 {
+            color: #B34E86;
+        }
+
+        button {
+            background-color: #B34E86;
+        }
+    }
+
+    .rose {
+        h3 {
+            background-color: #F16063;
+        }
+
+        h4 {
+            color: #F16063;
+        }
+
+        button {
+            background-color: #F16063;
+        }
+    }
+
+    .gold {
+        h3 {
+            background-color: #F0A41D;
+        }
+
+        h4 {
+            color: #F0A41D;
+        }
+
+        button {
+            background-color: #F0A41D;
+        }
+    }
+}
